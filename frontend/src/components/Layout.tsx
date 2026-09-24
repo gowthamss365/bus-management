@@ -16,7 +16,7 @@ export default function Layout() {
       .then(res => {
         setUserName(res.data.name || `${role} User`);
       })
-      .catch(err => {
+      .catch(() => {
         // Fallback for offline local dev
         setUserName(`Test ${role}`);
       });

@@ -22,7 +22,7 @@ export default function Login() {
         else if (role === 'driver') navigate('/driver');
         else if (role === 'manager') navigate('/manager');
       })
-      .catch(err => {
+      .catch(() => {
         console.warn("Backend not reachable. Using fallback login for UI dev.");
         localStorage.setItem('transit_token', 'mock_token_123');
         if (role === 'passenger') navigate('/passenger');

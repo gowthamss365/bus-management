@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Bus, Users, AlertTriangle, TrendingUp, Calendar, ShieldAlert } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { Bus, Users, AlertTriangle, TrendingUp, Calendar } from 'lucide-react';
 import api from '../api';
 import { MapContainer, TileLayer, Marker, Popup, Tooltip } from 'react-leaflet';
 
